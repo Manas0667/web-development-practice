@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .form-container{
+            border-radius: 3px;
+            width: 300px;
+            background-color:white;
+            border :3px solid grey;
+            margin: 30px auto;
+            padding:30px;
+        }
+        h2{
+            text-align:center;
+        }
+        input{
+            border-radius: 3px;
+            margin: 10px auto;
+            width: 310px ;
+        }
+        input[type="radio"],input[type="checkbox"]{
+            width: auto;
+        }
+        select{
+            width: 300px;
+        }
+
+    </style>
+
+
+</head>
+<body>
+    <h2>Student Registration Portal</h2>
+<form class="form-container" action="/register" method="post">
+    <label for="fullname"> <strong>FullName:</strong></label>
+    <br>
+    <input type="text" id ="fullname" name="fullname" placeholder="enter your name">
+    <br>
+    <label for="email"><strong>University/Email:</strong></label>
+    <br>
+    <input type="email" id="email" name="email" placeholder="enter your email">
+    <br>
+    <label for="age" > <strong>Age</strong></label>
+    <input type="text" id="age" name="age" >
+    <br>
+       
+       <label for="date"> <strong>Date</strong></label>
+        <input type="date"></input>
+
+       
+
+        <label for="branch"> <strong>Select Branch:</strong></label>
+        <br>
+        <select name="branch" id="branch">
+            <option value="CSE"> cse</option>
+             <option value="MBA"> mba</option>
+              <option value="BIOTECH"> biotech</option>
+        </select>
+        <br>
+       
+             <label name ="gender" > <strong> Gender</strong></label>
+        <br>
+        <input type="radio" id="male"  value="male">
+        <label for="male">Male</label>
+       <input type="radio" value="female" id="female">
+       <label for="female">Female</label>
+       <br>
+        <button type="submit">Submit</button>
+    </form>
+    <br>
+ 
+    
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3535.6504838979185!2d77.59421037575929!3d27.60436372624171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39736ce47bffc039%3A0xfe5fc3da92c6341!2sGLA%20University!5e0!3m2!1sen!2sin!4v1787220121966!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        <br>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/ESnrn1kAD4E?si=sWU3fIZnrp93T1d3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</body>
+</html>
