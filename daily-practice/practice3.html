@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            background-color: 3.htmlrgb(237, 232, 226);
+            font-size: 16px;
+            position: relative;
+            
+        }
+        .box{
+            height:200px;
+            width:200px;
+            margin: 30px;   
+        }
+        #box-1{
+            background-color:silver;
+            font-size: 16px;
+            position: static;
+        }
+        #box-2{
+            background-color: rgb(27, 92, 212);
+            position: relative;
+            
+            left:50px;
+        }
+        #box-3{
+            background-color: rgb(213, 198, 198);
+            position: absolute;
+            top:0;
+            right:0;
+
+            
+        }
+        #box-4{
+            background-color: rgb(135, 22, 22);
+            position: fixed;
+           
+            bottom:0;
+            right:0;
+
+        }
+        #box-5{
+            background-color: aliceblue;
+            position: static;
+        }
+          #box-6{
+            background-color: aliceblue;
+            position: static;
+        }
+          #box-7{
+            background-color: aliceblue;
+            position: static;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div id="box-1" class="box"> 1. I am static </div>
+        <div id="box-2" class="box"> 2.I am relative (shifted) </div>
+        <div id="box-3" class="box"> 3.I am absolute (top right of parent) </div>
+        <div id="box-4" class="box"> 4.I am fixed </div>
+        <div id="box-5" class="box"> 5.normal box </div>
+        <div id="box-6" class="box"> 6.normal box </div>
+        <div id="box-7" class="box"> 7.normal box </div>
+
+    </div>
+</body>
+</html>
