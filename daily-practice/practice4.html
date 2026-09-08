@@ -17,12 +17,15 @@
             font-family: sans-serif;
         }
         .card-container{
-             display: flex;
+             display: grid;
+             grid-template-columns: 300px 300px ;
+             grid-template-rows: 200px 200px;
             flex-wrap: wrap;
-            gap :20px;
+            column-gap: 30px;
+            row-gap: 30px;
             padding: 40px;
             background-color: rgb(238,253,253);
-            justify-content: center;
+         
         }
 
         .movie-card{
@@ -32,6 +35,12 @@
             border-color: #00000014;
             background-color: white;
             overflow: hidden;
+            transition: all 1s;
+            
+        }
+        .movie-card:hover{
+          transform: scale(1.1);
+
         }
         .movie-image img{
             width: 100%;
